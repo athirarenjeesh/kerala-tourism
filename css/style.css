@@ -84,7 +84,7 @@ margin-right: 55px;
     float: right; */
 /* end searchbox */
 
-}
+/* } */
 
 /* .head-tag a:hover{ 
  background-color: white; */
@@ -99,14 +99,14 @@ margin-right: 55px;
     float:right;
     background-color:white;
      */
-}  
+/* }   */
 
 /* .container h1{
     padding-top: 20px; 
     padding-bottom: 0%;
     font-size: 55px;
     font-style: italic; */
-}
+/* }
 /* .form-control{
     border: 0 !important;
     border-radius: 5px !important ;
@@ -120,7 +120,7 @@ margin-right: 55px;
     border:2px solid ,#fff;
     border: radious 50px;
     background:transparent; */
-} 
+/* }  */ 
 .row{
     display: flex;
     height: 88%;
@@ -237,5 +237,5 @@ img{
 }
 .text{
     text-align: justify;
-    
+
 }
