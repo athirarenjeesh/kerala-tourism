@@ -1,0 +1,1 @@
+(this.$WP=this.$WP||[]).push(["ORo-9q",(e,t)=>{"use strict";var n,o,r=({children:e})=>{var[t,r]=n.useState();return n.createElement(o.Provider,{value:{boundingBox:t,setBoundingBox:r}},e)};return[()=>{e({FusionMapContextProvider:r,default:o=n.createContext({boundingBox:null,setBoundingBox:()=>{}})})},[e=>n=e.default]]},["cDcdfi"]]);

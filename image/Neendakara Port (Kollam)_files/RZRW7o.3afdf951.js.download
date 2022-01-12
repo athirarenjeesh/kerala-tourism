@@ -1,0 +1,1 @@
+(this.$WP=this.$WP||[]).push(["RZRW7o",(e,r)=>{"use strict";var t,s=({mobileRenderer:e,desktopRenderer:r})=>{var s=t(),{width:u,height:i,landscape:_}=s;return 0===u||0===i?null:!(_&&i<600)&&u>768?r():e()};return[()=>{e({MAX_HEIGHT_FOR_MOBILE_LANDSCAPE:600,MAX_WIDTH_FOR_MOBILE:768,default:s})},[e=>t=e.useViewport]]},["Bk-fue"]]);

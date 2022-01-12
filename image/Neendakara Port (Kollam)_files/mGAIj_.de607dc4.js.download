@@ -1,0 +1,1 @@
+(this.$WP=this.$WP||[]).push(["mGAIj_",(e,t)=>{"use strict";var s,a;function r(e){var t="MOBILE"===s.useContext(a).userAgentCategory;switch(e){case"newTab":return"_blank";case"newTabDesktop":return t?"_self":"_blank";case"sameTab":default:return"_self"}}return e("useLinkTarget",r),[()=>{e("useLinkTarget",r)},[e=>s=e,e=>a=e.Device]]},["cDcdfi","2R4xv2"]]);

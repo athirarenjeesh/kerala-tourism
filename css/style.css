@@ -1,0 +1,241 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-size: cover;
+}
+    header
+    {
+    background-color:yellowgreen;
+    height: 5em;
+    }
+
+    img {
+        padding: 2px;
+        margin-left: 10%;
+        margin-top: 14px; 
+        float: left;
+    }
+    /* h1{
+         font-size: 150%;
+        color:blue;
+        text-align: center;
+        text-decoration: cadetblue;
+        text-shadow: darkblue;
+    }
+        */
+    
+.head-tag
+{
+float: right;
+margin-top: 33px;
+margin-right: 55px;
+    }
+    .head-tag a
+    {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   text-decoration: none;
+   color: white;
+   border: 1px solid white;
+   padding: 8px;
+   margin-right:8px ;
+    }
+.head-tag a:hover{
+    background-color: cornflowerblue;
+    color: black;
+    transition: .5s ease-in-out;
+
+}
+
+ body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center ;
+    font-size: 55px;
+    font-style: italic;
+    color: white;
+} 
+.bgimage{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} 
+
+.header img{
+    width: 170px;
+    float:left;
+  
+}
+ /* search box */
+/* .input-group{
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    background: white;
+    padding: 20px;
+    margin: auto;
+    padding: 2px;
+    float: right; */
+/* end searchbox */
+
+}
+
+/* .head-tag a:hover{ 
+ background-color: white; */
+ /* login  */ 
+ /* .login-btn{
+    width: 100px;
+    padding: 10px;
+    outline:none !important;
+    border:2px solid ,#fff;
+    border: radious 50px;
+    background:transparent;
+    float:right;
+    background-color:white;
+     */
+}  
+
+/* .container h1{
+    padding-top: 20px; 
+    padding-bottom: 0%;
+    font-size: 55px;
+    font-style: italic; */
+}
+/* .form-control{
+    border: 0 !important;
+    border-radius: 5px !important ;
+    margin: 3px;
+    box-shadow: none !important;
+} */
+/* .input-group-text-btn{
+    width: 100px;
+    padding:8px 0;
+    outline:none !important;
+    border:2px solid ,#fff;
+    border: radious 50px;
+    background:transparent; */
+} 
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col{
+    flex-basis: 50%;
+
+}
+/* h1{
+    color: #fff;
+    font-size: 100px;
+    text-align: justify;
+    padding: 10%;
+} */
+/* p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+} */
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border: radius 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-size: cover;
+
+}
+.login{
+    align-content: center;
+    border: 2px solid red;
+    background-color: violet;
+     height: 25%;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-right: 25%;
+    margin-bottom: 25%;
+    padding: 50px;
+    /* background-size: cover; */
+    
+}
+.login h2{
+    text-align: center;
+    color: #000;
+    
+}
+.login input{
+    height: 1.5em;
+    color: #000;
+    font-size: 50px;
+}
+.login #login-button{
+     width: 50%; 
+    height: 3em;
+    color:black;
+    background-color: skyblue;
+    border: 1px solid dodgerblue;
+    font-size:50px;
+}
+.login-misc{
+    font-size: 2em;
+
+}
+
+/* SIGNUP FORM */
+
+.signup{
+    align-content: center;
+    border: 2px solid black;
+    background-color:purple;
+    height: 30em;
+    margin-left: 25%;
+    margin-top: 25%;
+    margin-right: 25%;
+    margin-bottom: 25%;
+    padding: 10px;
+    background-size: cover;
+}
+.signup h2{
+    text-align: center;
+    color: #000;
+    
+}
+.signup input{
+    height: 1.5em;
+    color: #000;
+    font-size: 50px;
+}
+.signup #submit-button{
+     width: 50%; 
+    height: 3em;
+    color:black;
+    background-color: skyblue;
+    border: 1px solid dodgerblue;
+    font-size:50px;
+}
+.container{
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
+    
+}
+
+img{
+    float: left;
+    width: 300px;
+    height: 260px;
+    padding: 0 10px 0 0;
+}
+.text{
+    text-align: justify;
+    
+}

@@ -1,0 +1,1 @@
+(this.$WP=this.$WP||[]).push(["AFIA6D",(e,t)=>{"use strict";var r,a,i=({children:e})=>a.createElement("span",{className:"flgFI"},e),c=({children:e})=>r.createElement("div",{"data-fs-block":"true"},e);return[()=>{e({RequiredLabel:i,SensitiveInformationBlocker:c})},[e=>(r=e,a=e.default)]]},["cDcdfi"]]);
