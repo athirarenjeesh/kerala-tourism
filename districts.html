@@ -1,63 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        h1{
-            text-align: center;
-        }
-        </style>
+
+        <style type="text/css">
+    *{
+        box-sizing: border-box;
+        background-color: wheat;
+    }
+    .box{
+        float: left;
+        width: 25%;
+        padding: 5px;
+
+    }
+    .box #pic{
+        width: 100%;
+        height: 150px;
+    }
+.clearfix::after{
+    content:14;
+    clear: both;
+    display: table;
+}
+
+</style> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>kerala districts</title>
 </head>
+ 
 <body >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
         <!-- districts -->
     
-
+<header>
 <h1>districts in kerala</h1>
-
-
-  
-    <a href="kozhikkode.html"> 
-    <img src="./image/sargalayakkd.jpg" alt="kozhikkode" title="kozhikkode">
+</header>
+<br>
+<div class="clearfix">
+<div class="box">  
+    <a href="kozhikkode.html"> kozhikkode
+      
+    <img id="pic"  src="./image/sargalayakkd.jpg" alt="kozhikkode" title="kozhikkode" height="200px" width=200px>
     
+</div>
+    <br>
     <Br>
-    <a href="kasargod.html"> 
-    <img src="./image/Bekal_Fort_kasrgod.jpg" alt="" title="kasargod">
+        <div class="box"> 
+    <a href="kasargod.html">kasargod 
+    <img id="pic" src="./image/Bekal_Fort_kasrgod.jpg" alt="" title="kasargod" height="200px" width=200px>
+</div>
     <br>
-    <a href="kannur.html"><img src="./image/theyyam_large.jpg" alt="" title="kannur">
     <br>
-    <a href="Wayanadu.html"><img src="./image/wayanadu.jpg" alt="" title="Wayanadu">
+    <div class="box">
+    <a href="kannur.html">kannur<img  id="pic" src="./image/theyyam_large.jpg" alt="" title="kannur" height="200px" width=200px>
+    </div>
     <br>
-    <a href="Malappuram.html"><img src="./image/nilamboor in mlp.jpg" alt="" title="Malappuram">
     <br>
-    <a href="Thrissur.html"><img src="./image/THRISSUR temple.jpg" alt="" title="Thrissur">
+    <div class="box">
+    <a href="Wayanadu.html">wayanadu<img  id="pic" src="./image/wayanadu.jpg" alt="" title="Wayanadu" height="200px" width=200px>
+    </div>
     <br>
-    <a href="Palakkad.html"><img src="./image/malampuzha-garden-pkd.jpg" alt="" title="Palakkad">
     <br>
-    <a href="Ernakulam.html"><img src="./image/shutterstock_in kochi.jpg" alt="" title="Ernakulam">
+    <div class="box">
+    <a href="Malappuram.html">Malappuram<img  id="pic" src="./image/nilamboor in mlp.jpg" alt="" title="Malappuram" height="200px" width=200px>
+    </div>
     <br>
-    <a href="Idukki.html"><img src="./image/munnar idukki.jpg" alt="" title="Idukki">
     <br>
-    <a href="kottayam.html"><img src="./image/Vagamon-hills kottayam.jpg" alt="" title="kottayam">
+    <div class="box">
+    <a href="Thrissur.html">Thrissur<img id="pic" src="./image/THRISSUR temple.jpg" alt="" title="Thrissur" height="200px" width=200px>
+    </div>
     <br>
-    <a href="Kollam.html"><img src="./image/palaruvi@kollam.jpg" alt="" title="Kollam">
     <br>
-    <a href="Pathanamthitta.html"><img src="./image/gavi_Pathanamthitta-tourism.jpg" alt="" title="Pathanamthitta">
+    <div class="box">
+    <a href="Palakkad.html">palakkad<img id="pic" src="./image/malampuzha-garden-pkd.jpg" alt="" title="Palakkad" height="200px" width=200px>
+    </div>
     <br>
-    <a href="Alappuzha.html"><img src="./image/houseboat in alappy.jpg" alt="" title="alappuzha">
     <br>
-    <a href="Trivandrum.html"><img src="./image/padmanabhaswamy-temple-tvm.jpg" alt="" title="Thiruvananthapuram">
+    <div class="box">
+    <a href="Ernakulam.html">Ernakulam<img id="pic" src="./image/shutterstock_in kochi.jpg" alt="" title="Ernakulam" height="200px" width=200px>
+    </div>
     <br>
+    <br>
+    <div class="box">
+    <a href="Idukki.html">idukki<img id="pic" src="./image/munnar idukki.jpg" alt="" title="Idukki" height="200px" width=200px>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+    <a href="kottayam.html">kottayam<img id="pic" src="./image/Vagamon-hills kottayam.jpg" alt="" title="kottayam" height="200px" width=200px>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+    <a href="Kollam.html">kollam<img id="pic" src="./image/palaruvi@kollam.jpg" alt="" title="Kollam" height="200px" width=200px>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+    <a href="Pathanamthitta.html">Pathanamthitta<img id="pic" src="./image/gavi_Pathanamthitta-tourism.jpg" alt="" title="Pathanamthitta" height="200px" width=200px>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+    <a href="Alappuzha.html">Alappuzha<img id="pic" src="./image/houseboat in alappy.jpg" alt="" title="alappuzha" height="200px" width=200px>
+    </div>
+    <br>
+    <br>
+    <div class="box">
+    <a href="Trivandrum.html">Thiruvananthapuram<img id="pic" src="./image/padmanabhaswamy-temple-tvm.jpg" alt="" title="Thiruvananthapuram" height="200px" width=200px>
+    </div>
+    </div>
 
+    <br>
     
 </body>
 </html>
