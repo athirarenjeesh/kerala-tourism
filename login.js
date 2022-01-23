@@ -1,9 +1,18 @@
-var username=document.getElementById("usename").nodeValue;
+var username=document.getElementById("usename").Value;
+var errorusr=  document.getElementById("Error");
  var password=document.getElementById("password").Value;
+var errorpwd=document.getElementById("errorpwd");
+function validate();{
+if  ( username.value==""||password.valuess==""){
+    alert("Enter  valid username and password");
 
-function validate() {
- if (username==""||password==""){
-     alert("enter username and password to login ")
- }
+return false;
+}
+else{
+    alert("validation is proper");
+    return true;
+
+    
+}
 
 }

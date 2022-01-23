@@ -15,8 +15,7 @@ body{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color:white;
         padding: 100px;
-    
-    }
+        }
     
 
     img {
@@ -230,7 +229,7 @@ margin-right: 55px;
 .container{
     margin: 150px auto;
     width: 50%;
-    padding: 8px;
+    padding: 10px;
     
 }
 
@@ -289,7 +288,7 @@ img{
 .box input[type="text"]:focus,.box input[type="password"]:focus
 {
 width: 270px;
-border-color:#ffc400ec ;
+border-color:#645f4dec ;
 }
 
 .box input[type="submit"]{
