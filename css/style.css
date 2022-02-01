@@ -164,7 +164,7 @@ margin-right: 55px;
 
 /* } */
 .login-content{
-  text-align: left; 
+  text-align: right; 
   font-size: 2em; 
 }
 
@@ -189,6 +189,7 @@ margin-right: 55px;
 
 /* SIGNUP FORM */
 .signup label{
+    text-align: justify;
    color:white; 
    font-size: x-large;
    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -197,7 +198,7 @@ margin-right: 55px;
     color: white;
 }
 .signup{
-    
+    background-color:royalblue;
     align-content: left;
     height: 30em;
     margin-left: 30%;
@@ -206,6 +207,8 @@ margin-right: 55px;
     margin-bottom: 30%;
     padding: 10px;
     background-size: cover;
+    box-shadow: 0 10px 50px 0 rgba(95, 69, 247, 0.9),
+        0 10px 50px 0 rgba(0, 0, 0, 0.9);
 }
 .signup h2{
     text-align: center;
@@ -248,19 +251,20 @@ img{
 .box{
     align-content: center;
     /* border: 2px solid red; */
-    background-color:white;
-     height: 55%;
-     top: 50%;
+    background-color:lightgreen;
+     height: 70%;
+     top: 30%;
      left: 50%;
      margin-left: 5%; 
     width: 300px;
-     margin-top: 2%;
+     margin-top: 10%;
     margin-right: 5%;
     margin-bottom: 25%;
-    padding: 30px;
+    padding: 50px;
     position: absolute;
     transform: translate(-50%,-50%);
-
+    box-shadow: 0 10px 50px 0 rgba(18, 236, 145, 0.9),
+        0 10px 50px 0 rgba(0, 0, 0, 0.9);
 }
 
 .box h2{
@@ -273,11 +277,11 @@ img{
 .box input[type="text"],.box input[type="password"]
 {
     border: 0;
-    background: none;
+    background: lightpink;
     display: block;
-    margin: 20px auto;
+    margin: 10px auto;
     text-align: center;
-    border: 3px solid #03674d;
+    border: 5px solid #03674d;
     padding: 14px 10px;
     width: 180px;
     outline: none;

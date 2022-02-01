@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up to Kerala Tourism</title>
+  <link rel="icon" type="image/x-icon" href="Images/logo.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <style>
+     body{
+        background-size: cover;
+     }
+      .signup {
+    margin: 2.5em;
+    padding: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    /* background-color: transparent; */
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 50px;
+    
+
+box-shadow: 0 10px 50px 0 rgba(226, 69, 7, 0.9),
+        0 10px 50px 0 rgba(52, 20, 238, 0.9);
+}
+.formhead h3 {
+    /* Forgotten the password */
+
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#colRM {
+    color: white;
+}
+
+#FTP {
+    float: right;
+    color: red;
+    text-align-last: right;
+}
+
+#FTP:hover {
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
+
+#Log-In-Button {
+    width: 100%;
+}
+
+.acc {
+    font-size: large;
+    text-align: center;
+}
+
+.acc p {
+    color: white;
+}
+
+.acc a {
+    text-decoration: none;
+}
+#img{
+    float: left;
+}
+h4{
+    text-align: center;
+    color: whitesmoke;
+}
+  </style>
+
+</head>
+
+<body background="./image/MUNNAR IDUKKI (2).jpg" >
+         
+    <header>
+        <img id="img" src="image/logo1.png" alt="logo"  height="140px" width="120px">  <h4 >kerala tourisom development corporation Ltd..</h4>
+    </header>        
+  <!-- Form -->
+
+  <div class="signup col-lg-5 formhead mx-auto">
+
+    <h3>Sign In To Kerala Tourism Website</h3>
+    <br>
+
+    <form action="login.html" onsubmit="return validat();">
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" placeholder="Enter Your First Name" name="First Name" required>
+        <label for="FName">First Name</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" placeholder="Enter Your Last Name" name="Last Name">
+        <label for="LName">Last Name</label>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="ebox" onkeyup="emailValidate()" placeholder="Enter Your Email Id"
+          name="Email Id" required>
+        <label for="LName">Email Id</label>
+        <p id="emailMessage"></p>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="phbox" onkeyup="phValidate()" placeholder="Enter Your Phone Number"
+          name="Phone Number" maxlength="12" required>
+        <label for="LName">Phone Number</label>
+        <p id="phMessage"></p>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="password" class="form-control" id="pwdbox" onkeyup="pwdValidate()" placeholder="Enter a Password"
+          name="Password" required>
+        <label for="LName">Password</label>
+        <p id="pwdMessage"></p>
+      </div>
+
+      <div class="form-floating mb-3 mt-3">
+        <input type="password" class="form-control" id="pwdcbox" onkeyup="pwdcValidate()"
+          placeholder="Confirm the Password" name="Confirm the Password" required>
+        <label for="LName">Confirm the Password</label>
+        <p id="pwdcMessage"></p>
+      </div>
+
+       <div class="row mb-3">
+      <div class="col-sm-10 offset-sm-2">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck1">
+          <label class="form-check-label" for="gridCheck1">
+            Remember Me
+          </label>
+          <a href="#" id="FTP">Forgotten the password?</a>
+        </div>
+      </div>
+    </div> 
+
+      <br>
+
+
+      
+ 
+
+
+
+
+
+
+
+  <!-- Footer -->
+
+  <div class="footer">
+    <h3>Copyright @Kerala Tourism 2022</h3>
+  </div>
+
+
+  <!-- /Footer -->
+
+<script>var e = document.getElementById("ebox");
+    var ph = document.getElementById("phbox");
+    var pwd = document.getElementById("pwdbox");
+    var pwdc = document.getElementById("pwdcbox");
+    var em = document.getElementById("emailMessage");
+    var phm = document.getElementById("phMessage");
+    var pwdm = document.getElementById("pwdMessage");
+    var pwdcm = document.getElementById("pwdcMessage");
+    var ev, phv, pwdv, pwdcv;
+    
+    function emailValidate() {
+        // var eregexp = /^([\w]+)@([\w]+).([\w]{2,3})(.[\w]{2,3})?$/;
+        var eregexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+)\.([a-z]{2,3})(\.[a-z]{2,3})?$/;
+        if (eregexp.test(e.value)) {
+            em.innerHTML = "Valid";
+            em.style.color = "green";
+            e.style.border = "";
+            ev = true;
+        } else {
+            em.innerHTML = "Email format should be in example@domain.xxx or example@domain.xxx.xxx";
+            em.style.fontSize = "14px";
+            em.style.color = "red";
+            e.style.border = "3px solid red";
+            ev = false;
+        }
+    }
+    
+    function phValidate() {
+        var phregexp = /^([0-9]{3})([. -]?[0-9]{3})([. -]?[0-9]{4})$/;
+        // var phregexp = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (phregexp.test(ph.value)) {
+            phm.innerHTML = "Valid";
+            phm.style.color = "green";
+            ph.style.border = "";
+            phv = true;
+        } else {
+            phm.innerHTML = "Phone number format should be in XXX-XXX-XXXX, XXX.XXX.XXXX, XXX XXX XXXX or XXXXXXXXXX";
+            phm.style.fontSize = "14px";
+            phm.style.color = "red";
+            ph.style.border = "3px solid red";
+            phv = false;
+        }
+    }
+    
+    function pwdValidate() {
+        var leg = pwd.value.length;
+        var L = /[a-z]/;
+        var U = /[A-Z]/;
+        var N = /[0-9]/;
+    
+        if ((leg >= 8) && (L.test(pwd.value)) && (U.test(pwd.value)) && (N.test(pwd.value))) {
+            pwdm.innerHTML = "Valid";
+            pwdm.style.color = "green";
+            pwd.style.border = "";
+            pwdv = true;
+            if ((leg >= 8) && (leg <= 12)) {
+                pwd.style.border = "3px solid orange";
+            } else {
+                pwd.style.border = "3px solid green";
+            }
+        } else {
+            pwdm.innerHTML = "Password should contain minimum 8 characters and at least one uppercase, one lowercase and a number";
+            pwdm.style.fontSize = "14px";
+            pwdm.style.color = "red";
+            pwd.style.border = "3px solid red";
+            pwdv = false;
+    
+        }
+    }
+    
+    function pwdcValidate() {
+        if ((pwd.value) == (pwdc.value)) {
+            pwdcm.innerHTML = "Both the passwords are matching";
+            pwdcm.style.color = "green";
+            pwdc.style.border = "";
+            pwdcv = true;
+        } else {
+            pwdcm.innerHTML = "Entered passwords is not matching the above one!";
+            pwdcm.style.fontSize = "14px";
+            pwdcm.style.color = "red";
+            pwdc.style.border = "3px solid red";
+            pwdcv = false;
+        }
+    }
+    
+    function validat() {
+        pwdcValidate();
+        if (ev && phv && pwdv && pwdcv) {
+            alert("Your account has been successfully created. Press OK to enter the LogIn page.");
+            return true;
+        } else {
+            alert("Please check if the data entered is following the specified format.");
+            return false;
+        }
+    }
+    </script>
+
+  <!-- <script src="JavaScript/signinJS.js"></script> -->
+
+</body>
+
+</html>
